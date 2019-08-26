@@ -1,0 +1,9 @@
+<h1>统计结果, 总字数为{{ word_count }}字</h1>
+<a href="/about">关于本页</a>
+<h2>你的文本</h2>
+{{ text }}
+<h2>统计排序</h2>
+{% for word,count in dict %}
+{{ word }}: {{ count }}
+<br>
+{% endfor %}
